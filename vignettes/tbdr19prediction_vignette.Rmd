@@ -1,0 +1,21 @@
+---
+title: "Tuberculosis Drug Resistant Predictive Model"
+author: "Chris G. Chinedozie"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Tuberculosis Drug Resistant Predictive Model}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(tbdr19prediction)
+```
