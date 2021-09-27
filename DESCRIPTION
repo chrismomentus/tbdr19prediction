@@ -1,15 +1,14 @@
 Package: tbdr19prediction
-Title: What the Package Does (One Line, Title Case)
+Title: Tuberculosis Drug Resistant Predictive Model
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Chris G.",
+           family = "Chinedozie",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
+           email = "chrismomentus@gmail.com",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Description: Predictive model at outcomes/results for Tuberculosis Drug Resistant patientes.
+License: MIT
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
