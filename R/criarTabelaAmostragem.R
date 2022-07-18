@@ -11,7 +11,7 @@
 #'
 criarTabelaAmostragem <- function(dataFrameTB, seedValue, sampleSize){
   smp_size <- floor(sampleSize * nrow(dataFrameTB))
-  set.seed(seedValue)
+  #set.seed(seedValue)
   resultTable <- sample(seq_len(nrow(dataFrameTB)), size = smp_size)
   return(resultTable)
 }
