@@ -3,4 +3,5 @@
 export(AprioriTBDR)
 export(criarTabelaAmostragem)
 export(hello)
+export(mutateFilesTBDR)
 export(prepararRegrasValidas)
