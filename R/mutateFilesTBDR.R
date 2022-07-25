@@ -19,7 +19,7 @@ mutateFilesTBDR <- function(dataFrameTB){
     separate_rows(LHSandRHS, sep = ",") %>%
     spread(LHSandRHS, flg)
 
-  dfMutated$a=NULL
+  dfMutated$a<-NULL
   a <- select(coincedente, Desfechos:support.y)
   matrizCoincedente <- cbind(dfMutated, a)
 
