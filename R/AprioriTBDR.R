@@ -10,11 +10,11 @@
 
 #library(arules)
 
-AprioriTBDR <- function(dataFrameTB, seedValue){
+AprioriTBDR <- function(dataFrameTB, seedValue, sup, con){
   set.seed(seedValue)
   trans_treino <- as(dataFrameTB, "transactions")
   reg_treino <- apriori(data = trans_treino,
-                        parameter = list(supp = 0.005, conf = 0.05),
+                        parameter = list(supp = sup, conf = con),
                         appearance = list(rhs=c("encerra2=0","encerra2=1", "encerra2=2","encerra2=3"), default = "lhs"),
                         control = list(verbose=F))
   return(reg_treino)
