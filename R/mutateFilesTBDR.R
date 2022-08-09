@@ -13,7 +13,12 @@
 mutateFilesTBDR <- function(dataFrameTB){
 
   coincedente <- as.data.frame(dataFrameTB)
-  df <- select(coincedente,a, LHSandRHS)
+
+   if("a" %in% colnames(coincedente)){
+      df <- select(coincedente,a, LHSandRHS)
+   }else {
+      df <- select(coincedente, LHSandRHS)
+   }
 
   dfMutated <- df %>% mutate(id =  row_number(), flg = 1) %>%
     separate_rows(LHSandRHS, sep = ",") %>%
